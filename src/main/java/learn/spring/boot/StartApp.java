@@ -13,7 +13,7 @@ public class StartApp extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return super.configure(builder);
+        return builder.sources(StartApp.class);
     }
 
     public static void main(String[] args) {
@@ -21,8 +21,8 @@ public class StartApp extends SpringBootServletInitializer {
     }
 
     @RequestMapping("/")
-    public String hell() {
-        return "Hello";
+    public String hello() {
+        return "hello";
     }
 
 }
