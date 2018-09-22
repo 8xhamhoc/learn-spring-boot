@@ -9,4 +9,5 @@ public class LearSpringBootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LearSpringBootApplication.class, args);
 	}
+
 }
